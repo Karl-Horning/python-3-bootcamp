@@ -1,0 +1,12 @@
+# def sum_floats(*args):
+#    result = 0
+#    for n in args:
+#       if isinstance(n, float):
+#          result += n
+#    return result
+
+def sum_floats(*args):
+    return sum(arg for arg in args if type(arg) == float)
+
+print(sum_floats(1.5, 2.4, 'awesome', [], 1)) # 3.9
+print(sum_floats(1,2,3,4,5)) # 0
